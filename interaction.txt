@@ -1,0 +1,11 @@
+await interaction.reply({ content: `Player: ${interaction.user.username}\nStats\nHealth: ${player_Rock.health} \nRock: ${player_Rock.rock}\nPaper: ${player_Rock.paper}\nScissors: ${player_Rock.scissors}
+            \n\nEnemy: ${goblin_Enemy.name}\nStats\nHealth: ${goblin_Enemy.health}\nRock: ${goblin_Enemy.rock}\nPaper: ${goblin_Enemy.paper}\nScissors: ${goblin_Enemy.scissors}`, 
+            components: [rock, paper, scissor], ephemeral: true});
+
+const waffles = new ActionRowBuilder()
+                .addComponents(
+                    new ButtonBuilder()
+                        .setCustomId('waffles')
+				    	.setLabel('Demon Lord Waffles')
+					    .setStyle(ButtonStyle.Primary),
+                );
